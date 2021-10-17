@@ -20,17 +20,31 @@ public class SmallerAndGreater {
     public static int solve(int[] A) {
         int minVal=Integer.MAX_VALUE;
         int maxVal=Integer.MIN_VALUE;
-        int count=0;
         for(int i=0;i<A.length;i++){
             minVal=Math.min(minVal, A[i]);
-
             maxVal=Math.max(maxVal, A[i]);
         }
+        int count=0;
         for(int i=A.length-1;i>=0;i--){
             if(A[i]>minVal && A[i]<maxVal){
                 count++;
             }
         }
+
         return count;
+        // int minVal=Integer.MAX_VALUE;
+        // int maxVal=Integer.MIN_VALUE;
+        // int count=0;
+        // for(int i=0;i<A.length;i++){
+        //     minVal=Math.min(minVal, A[i]);
+
+        //     maxVal=Math.max(maxVal, A[i]);
+        // }
+        // for(int i=A.length-1;i>=0;i--){
+        //     if(A[i]>minVal && A[i]<maxVal){
+        //         count++;
+        //     }
+        // }
+        // return count;
     }
 }

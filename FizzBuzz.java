@@ -6,6 +6,7 @@ class FizzBuzz{
         int n= sc.nextInt();
        //String[] res=;
         System.out.println(fizzBuzz(n));
+        sc.close();
     }
     public static String[] fizzBuzz(int A){
         String[] ans = new String[A];

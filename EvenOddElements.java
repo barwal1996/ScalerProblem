@@ -33,6 +33,7 @@ public class EvenOddElements {
             }
             
             System.out.println(Math.abs(cnte - cnto));
+            sc.close();
          }
     }
 }

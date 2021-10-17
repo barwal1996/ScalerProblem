@@ -29,6 +29,7 @@ public class SubArrayWithLeastAverage {
         System.out.println(n);
     }
     public static int solve(int[] A, int B) {
+       
         int n=A.length;
         int res_index=0;
         int curr_sum=0;

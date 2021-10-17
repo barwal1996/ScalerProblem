@@ -1,4 +1,4 @@
-import java.io.*;
+
 import java.util.*;
 /*
 Input : abcc
@@ -38,6 +38,7 @@ public class PalindromeOfSubsTring {
 		Scanner scn = new Scanner(System.in);
 		String str = scn.next();
 		solution(str);
+		scn.close();
 	}
 
 }

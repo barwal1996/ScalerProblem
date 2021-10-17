@@ -20,5 +20,6 @@ So update B as B%n and then copy element by element in new array where ans[i] = 
             System.out.print(ans[i] + " ");
         }
         System.out.println();
+        sc.close();
     }
 }

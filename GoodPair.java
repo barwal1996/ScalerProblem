@@ -15,7 +15,7 @@ public class GoodPair {
     }
     public static int solve(int[] A,int B) {
         for(int i =0;i<A.length;i++){
-            int sum=0;
+           // int sum=0;
             for(int j=i+1;j<A.length;j++){
                 if(A[i]+A[j]==B){
                     return 1;

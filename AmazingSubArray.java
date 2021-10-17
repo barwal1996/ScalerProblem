@@ -8,17 +8,18 @@ public class AmazingSubArray {
         System.out.println(n);
     }
     public static int solve(String A) {
-        int n = A.length();
-        int res=0,count=0;
-        String vowel="aeiouAEIOU";
-        for(int i=0;i<A.length();i++){
-            for(int j=0;j<vowel.length();i++){
+        int count =0,res=0; int n=A.length();
+        String vowel= "aeiouAEIOU";
+        for(int i =0;i<A.length();i++){
+            for(int j=0;j<vowel.length();j++){
                 if(A.charAt(i)==(vowel.charAt(j))){
                     count+=n-i;
-                    res=count%10003;
+                     
                 }
             }
+            
         }
+        res=count%10003;
         return res;
     }
 }
