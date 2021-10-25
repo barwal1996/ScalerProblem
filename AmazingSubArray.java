@@ -5,6 +5,8 @@ public class AmazingSubArray {
     public static void main(String[] args) {
         String A="ABEC";
         int n = solve(A);
+        int new1=solve1(A);
+       // System.out.print(new1);
         System.out.println(n);
     }
     public static int solve(String A) {
@@ -21,5 +23,19 @@ public class AmazingSubArray {
         }
         res=count%10003;
         return res;
+    }
+    public static int solve1(String A) {
+    int len=A.length();
+        int count=0;
+
+        for (int i = 0; i <len ; i++) {
+
+            char s=A.charAt(i);
+            if(s=='a'||s=='e'||s=='i'||s=='o'||s=='u'||s=='A'||s=='E'||s=='I' || s=='O'||s=='U'){
+                count+=len-i;
+            }
+        }
+
+        return count%10003;
     }
 }
