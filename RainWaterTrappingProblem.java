@@ -1,6 +1,6 @@
 public class RainWaterTrappingProblem {
     public static void main(String[] args) {
-        int[] arr= {3,1,2,4,0,1,3,2};
+      //  int[] arr= {3,1,2,4,0,1,3,2};
         int[] heights={3,1,2,4,0,1,3,2};
        // int res= rainWater(arr);// 3+5
         int res1=trap(heights);
